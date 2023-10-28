@@ -52,13 +52,6 @@ function Navbar() {
                   </Link>
                 </li>
               ))}
-              {/* <li>
-                <div className="bg-gray-400 rounded-full w-12 h-12 hover:scale-105 delay-105 duration-700 ease-linear  ">
-                  <Link href="/cart">
-                    <AiOutlineShoppingCart className=" text-4xl cursor-pointer pt-2 ml-1 " />
-                  </Link>
-                </div>
-              </li> */}
             </ul>
           </div>
         </div>
