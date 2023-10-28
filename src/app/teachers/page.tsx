@@ -13,7 +13,31 @@ function page() {
               All Teachers
             </p>
           </div>
-         
+          <div className="grid grid-cols-1 md:grid-cols-3 ">
+            {cards.map((ele) => (
+              <div className="group relative p-5" key={ele.id}>
+                <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:scale-105 sm:group-hover:scale-105 delay-105 duration-500 ease-linear	 ">
+                  <Image
+                    src={ele.image}
+                    alt={ele.teacherName}
+                    width={950}
+                    height={450}
+                    className="h-full w-full lg:h-full lg:w-full"
+                  />
+                </div>
+                <p className="text-1xl md:text-2xl  text-gray-900 mt-5  font-extrabold ">
+                  {ele.teacherName}
+                </p>
+                <div className="mt-4 flex justify-between md:min-h-[80px]">
+                  <div>
+                    <p className="text-1xl   text-gray-900 mt-5  font-extrabold ">
+                      {ele.subject}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
