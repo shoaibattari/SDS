@@ -6,7 +6,7 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const navigation = [
-  { name: "Home", href: "" },
+  { name: "Home", href: "/" },
   { name: "Courses", href: "/courses" },
   { name: "Teachers", href: "/teachers" },
   { name: "Subjects", href: "/subjects" },
